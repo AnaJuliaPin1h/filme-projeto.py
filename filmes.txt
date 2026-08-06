@@ -1,0 +1,9 @@
+id|titulo|genero|ano|duracao_min|nota
+1|O Poderoso Chefão|Drama|1972|175|9.2
+2|Interestelar|Ficção Científica|2014|169|8.6
+3|Parasita|Drama|2019|132|8.5
+4|Homem-Aranha no Aranhaverso|Animação|2018|117|8.4
+5|Coringa|Drama|2019|122|8.4
+6|Mad Max: Estrada da Fúria|Ação|2015|120|8.1
+7|Clube da Luta|Suspense|1999|139|8.8
+8|A Vida é Bela|Drama|1997|116|8.6
