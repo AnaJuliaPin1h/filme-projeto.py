@@ -3,17 +3,17 @@
           sistema de cadastro de filmes              
                                                               
 """
-
+#bibliotecas
 import os
 import csv
 import time
 
-# ── Configurações 
+#onfigurações 
 ARQUIVO = "filmes.txt"
 SEPARADOR = "|"
 CAMPOS = ["id", "titulo", "genero", "ano", "duracao_min", "nota"]
 
-# ── Cores ANSI
+#coresdosiste
 class Cor:
     RESET   = "\033[0m"
     BOLD    = "\033[1m"
@@ -27,7 +27,7 @@ class Cor:
     AZUL    = "\033[94m"
 
 
-#  UTILITÁRIOS DE TELA
+
 
 def limpar():
     os.system("cls" if os.name == "nt" else "clear")
@@ -57,7 +57,7 @@ def msg_aviso(texto):
 
 
 
-#  FUNÇÕES DE ARQUIVO
+# funcoesarquiv
 
 
 def inicializar_arquivo():
@@ -101,7 +101,7 @@ def proximo_id(filmes):
 
 
 
-#  VALIDAÇÕES
+#validações
 
 def validar_ano(ano):
     if not ano.isdigit():
@@ -158,7 +158,7 @@ def escolher_genero():
 
 
 
-#  EXIBIÇÃO DE FILMES
+#  exibir dados
 
 def imprimir_cabecalho_tabela():
     print(f"  {Cor.BOLD}{Cor.CIANO}"
@@ -192,7 +192,7 @@ def imprimir_ficha_filme(f):
 
 
 
-#  FUNCIONALIDADES CRUD
+#CRUD
 
 def incluir_filme():
     titulo_bloco("Incluir Novo Filme")
@@ -531,7 +531,7 @@ def menu_principal():
 
 
 
-#  PONTO DE ENTRADA
+# pontode entrada main
 
 if __name__ == "__main__":
     inicializar_arquivo()
